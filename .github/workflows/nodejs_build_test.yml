@@ -11,6 +11,8 @@ on:
       - "testapp/**"
   push:
     branches: ["main"]
+    paths-ignore:
+      - "testapp/.github/workflows/**"
 
 jobs:
   build:
