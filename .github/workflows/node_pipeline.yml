@@ -18,6 +18,9 @@ jobs:
         run: echo I'm starting!
 
       - name: Run Node Action
-        uses: {elisemjoen}/testapp/.github/workflows/nodejs_build_test.yml
+        uses: elisemjoen/testapp/.github/workflows/nodejs_build_test.yml@main
+        with:
+            example_input: "Hello"
+
 
       - run: echo Finished:)))
